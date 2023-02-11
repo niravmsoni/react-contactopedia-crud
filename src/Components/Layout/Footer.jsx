@@ -6,7 +6,7 @@ const Footer = () => {
         borderTop: "1px solid #555",
         textAlign: "center",
     }}>
-        
+        Happy Coding! @ContactOPedia
     </div>);
 }
 export default Footer;
