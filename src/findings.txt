@@ -1,11 +1,11 @@
 63 and 64:
     Added basic folder structure. 
     Copied lot of basic code from previous project.
-    Moved all components under Components folder
+    Moved all components under Components folder.
 
 65.
     Added skeleton code in all components.
-    Created all components as a functional component except contactIndex.
+    Created all components as a functional component except ContactIndex(Reason, we're wanting to use state here).
     We're going to be using state to perform CRUD operations
 
 66. Add Contact.
@@ -13,3 +13,15 @@
         Purely added UI here. State to manage contact will be added now.
 
 67. Adding state to save Contact
+    We'll be saving contact information in the form of State.
+    IMP - Whenever we're wanting to use state, its' recommended to create it at the root component.
+    So, that we can pass it to its child components as a Prop.
+    In our case, ContactIndex = Class component.
+
+    Setting initial value of state in the constructor.
+
+    Created a hardCoded list of contacts and set them in contactList state component.
+    Now, passed the contactList with a filter to 2 child components(FavoriteContact and GeneralContact)
+    From both these components, called map() method and invoked Contact component.
+    Contact component responsible for actually displaying the contact name
+

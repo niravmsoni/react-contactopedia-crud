@@ -8,6 +8,34 @@ import GeneralContacts from "./GeneralContacts";
 import RemoveAllContact from "./RemoveAllContact";
 
 class ContactIndex extends React.Component{
+    constructor(props){
+        super(props);
+        this.state={
+            contactList: [
+                {
+                    id: 1,
+                    name: "Nirav Soni",
+                    phone: "12345",
+                    email: "nirav@soni.com",
+                    isFavorite: false,
+                },
+                {
+                    id: 2,
+                    name: "Hemali Soni",
+                    phone: "9876",
+                    email: "hemali@soni.com",
+                    isFavorite: true,
+                },
+                {
+                    id: 1,
+                    name: "Saanvi Soni",
+                    phone: "5678",
+                    email: "saanvi@soni.com",
+                    isFavorite: true,
+                },
+            ]
+        }
+    }
     render(){
         return(
             <div>
@@ -24,10 +52,18 @@ class ContactIndex extends React.Component{
                             <AddContact/>
                         </div>
                         <div className="row py-2">
-                            <FavoriteContacts/>
+                            <FavoriteContacts 
+                            contacts={
+                                this.state.contactList.filter
+                                ((u) => u.isFavorite == true)}
+                            />
                         </div>
                         <div className="row py-2">
-                            <GeneralContacts/>
+                            <GeneralContacts
+                            contacts={
+                                this.state.contactList.filter
+                                ((u) => u.isFavorite == false)}
+                                />
                         </div>
                     </div>
                 </div>
