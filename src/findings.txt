@@ -29,3 +29,15 @@
     Added icons and styled them
 
 69. Updated UI to show favorites and other contacts correctly
+
+70.
+    Create contact implementation
+        - Contact fields(Name, Email and Phone) are present in AddContact.jsx
+        - State is present in ContactIndex.jsx.
+        - We need to find a way to pass contact details from AddContact.jsx to ContactIndex.jsx
+
+        -We'll need to create local state in AddContact.jsx, to show if there was any validation? 
+        - Convert AddContact.jsx to class component.
+        - errorMessage and successMessage present in state.
+        - Added form in AddContact.jsx
+        - Create a handleAddContact arrow function in PARENT COMPONENT(ContactIndex) and call it from AddContact.jsx(ChildComponent)
