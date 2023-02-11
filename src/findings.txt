@@ -41,3 +41,11 @@
         - errorMessage and successMessage present in state.
         - Added form in AddContact.jsx
         - Create a handleAddContact arrow function in PARENT COMPONENT(ContactIndex) and call it from AddContact.jsx(ChildComponent)
+
+71.
+    Added name properties to all fields in Addcontact.jsx
+    In this function handleAddContactFormSubmit, extracted values & passed them as object to handleAddContact
+
+    ContactIndex.jsx:
+        Took object as input. Added Id and isFavorite property to object and set it to state using setState.
+        Added new object to array list using concat method
