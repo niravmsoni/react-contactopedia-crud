@@ -1,0 +1,15 @@
+63 and 64:
+    Added basic folder structure. 
+    Copied lot of basic code from previous project.
+    Moved all components under Components folder
+
+65.
+    Added skeleton code in all components.
+    Created all components as a functional component except contactIndex.
+    We're going to be using state to perform CRUD operations
+
+66. Add Contact.
+        Creating a form in AddContact component
+        Purely added UI here. State to manage contact will be added now.
+
+67. Adding state to save Contact
