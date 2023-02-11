@@ -25,3 +25,6 @@
     From both these components, called map() method and invoked Contact component.
     Contact component responsible for actually displaying the contact name
 
+68. Updated UI in contact.jsx component.
+    Added icons and styled them
+
