@@ -28,3 +28,4 @@
 68. Updated UI in contact.jsx component.
     Added icons and styled them
 
+69. Updated UI to show favorites and other contacts correctly
