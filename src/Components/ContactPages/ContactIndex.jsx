@@ -27,7 +27,7 @@ class ContactIndex extends React.Component{
                     isFavorite: true,
                 },
                 {
-                    id: 1,
+                    id: 3,
                     name: "Saanvi Soni",
                     phone: "5678",
                     email: "saanvi@soni.com",
@@ -82,8 +82,14 @@ class ContactIndex extends React.Component{
         })
     }
 
-    handleDeleteContact = (contact) => {
-        console.log(contact);
+    handleDeleteContact = (contactId) => {
+        this.setState((prevState) => {
+            return {
+                contactList: prevState.contactList.filter((obj) => {
+                    return obj.id !== contactId
+                })
+            };
+        });
     }
 
 

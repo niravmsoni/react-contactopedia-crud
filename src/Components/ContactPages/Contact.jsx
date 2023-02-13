@@ -30,7 +30,7 @@ const Contact = (props) => {
             <i className="bi bi-pencil-square" style={{fontSize: "1rem"}}></i>
         </button>
         <button className="btn btn-danger btn-sm m-1"
-        onClick={() => props.deleteClick(props.contact)}>
+        onClick={() => props.deleteClick(props.contact.id)}>
             <i className="bi bi-trash-fill" style={{fontSize: "1rem"}}></i>
         </button>
         </div>
