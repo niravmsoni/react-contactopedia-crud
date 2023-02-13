@@ -70,3 +70,6 @@
     to function.
      onClick={() => props.favoriteClick(props.contact)}>
      Then checking the console, we see the function handler triggering 
+
+     Now, making changes in ContactIndex.jsx.
+     Setting state in ContactIndex file
