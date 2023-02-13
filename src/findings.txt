@@ -58,3 +58,15 @@
     
 73. Display Validation message on screen
     Added code to display validation on screen in AddContact.jsx
+
+74. Toggle implementation
+    Create a new function handler "handleToggleFavorite" in ContactIndex.jsx and pass it along to FavoriteContact & GeneralContact as a prop
+    Pass the same prop to child component(Contact) from both FavoriteContact and GeneralContact
+    So we formed a hierarchy here. For invoking a handler written in base component ContactIndex,
+    we need to pass the function as a prop to FavoriteContact/GeneralContact and from there need to pass it down to Contact.jsx
+    We cannot directly access handler written in ContactIndex from Contact.jsx
+
+    Adding onClick on favorite button. Called the function & passed the contact prop as argument
+    to function.
+     onClick={() => props.favoriteClick(props.contact)}>
+     Then checking the console, we see the function handler triggering 
