@@ -73,3 +73,8 @@
 
      Now, making changes in ContactIndex.jsx.
      Setting state in ContactIndex file
+
+75 & 76. Delete contact
+    Followed same implementation as Favorite.
+    Create handler in ContactIndex.jsx and passed that function as a prop to GeneralContact.jsx and FavoriteContact.jsx
+    Passed prop to Contact.jsx and then wrote onClick event there to call the function written in ContactIndex.jsx
