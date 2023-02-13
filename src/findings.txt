@@ -55,3 +55,6 @@
         Duplicate, Empty Name and phone number.
         Returned validation object(status and message from ContactIndex.jsx) & consumed it in AddContact.jsx
         Captured the response in AddContact.jsx and set the local state in (AddContact.jsx)
+    
+73. Display Validation message on screen
+    Added code to display validation on screen in AddContact.jsx
