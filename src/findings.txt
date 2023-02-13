@@ -49,3 +49,9 @@
     ContactIndex.jsx:
         Took object as input. Added Id and isFavorite property to object and set it to state using setState.
         Added new object to array list using concat method
+
+72. Added validation
+    Added code to validate in ContactIndex.jsx
+        Duplicate, Empty Name and phone number.
+        Returned validation object(status and message from ContactIndex.jsx) & consumed it in AddContact.jsx
+        Captured the response in AddContact.jsx and set the local state in (AddContact.jsx)
