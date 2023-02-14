@@ -109,3 +109,14 @@
     OnClick of GetRandomContact, added the call and logged response in console.
 
 79. Extracting data from the response and adding to state
+    Since we've passed handleAddRandomContact() as prop from ContactIndex,
+    From AddRandomContact.jsx, added props as parameter and passed it along to function that makes axios call.
+    So, then to add further, created anonymous object and returned it from the function like:
+
+    return props.handleAddRandomContact({
+    name: apiResponse.data.first_name + " " + apiResponse.data.last_name,
+    email: apiResponse.data.email,
+    phone: apiResponse.data.phone_number,
+    });
+
+    End to end - Add Random contact - Working now
