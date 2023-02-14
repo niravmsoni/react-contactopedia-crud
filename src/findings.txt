@@ -89,3 +89,19 @@
 
     Copied and pasted existing addContact code in this function.
     Passed handleAddRandomContact as a prop to AddRandomContact.jsx
+
+78. Using Axios to make API call
+    Using this - https://axios-http.com/docs/intro
+    Doing npm install
+    $ npm install axios
+
+    Instead of hardcoding URL, creating a new folder namely Utility> New file api.jsx
+    Imported axios there and added a function call getRandomUser() there.
+    Made API call to "https://random-data-api.com/api/v2/users?size=2&is_xml=true" endpoint
+
+    Axios supports async await. So, awaited before capturing response and made method async
+
+    Exported the function. Not under default but like this:
+    export { getRandomUser };
+
+    Imported the same in AddRandomContact.jsx and then 
