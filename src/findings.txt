@@ -78,3 +78,14 @@
     Followed same implementation as Favorite.
     Create handler in ContactIndex.jsx and passed that function as a prop to GeneralContact.jsx and FavoriteContact.jsx
     Passed prop to Contact.jsx and then wrote onClick event there to call the function written in ContactIndex.jsx
+
+
+77. Adding random user to contact list
+    Ideally, with react applications, there's a backend API which we use to show data on UI.
+    For our example - Using - https://random-data-api.com/
+
+    Since all state info is present in ContactIndex.jsx, creating a new function handler to pass data to RandomContact.jsx
+    handleAddRandomContact()
+
+    Copied and pasted existing addContact code in this function.
+    Passed handleAddRandomContact as a prop to AddRandomContact.jsx
