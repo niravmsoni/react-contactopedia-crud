@@ -104,4 +104,6 @@
     Exported the function. Not under default but like this:
     export { getRandomUser };
 
-    Imported the same in AddRandomContact.jsx and then 
+    Imported the same getRandomUser in AddRandomContact.jsx and then created a function to call it
+    Added async await keywords here as well.
+    OnClick of GetRandomContact, added the call
