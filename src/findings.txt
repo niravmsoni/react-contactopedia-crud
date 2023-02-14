@@ -106,4 +106,6 @@
 
     Imported the same getRandomUser in AddRandomContact.jsx and then created a function to call it
     Added async await keywords here as well.
-    OnClick of GetRandomContact, added the call
+    OnClick of GetRandomContact, added the call and logged response in console.
+
+79. Extracting data from the response and adding to state
