@@ -38,7 +38,6 @@ class ContactIndex extends React.Component{
     }
 
     handleAddContact = (newContact) => {
-
         if (newContact.name ==""){
             return{status: "failure", msg: "Please enter a valid name"};
         }
@@ -104,6 +103,13 @@ class ContactIndex extends React.Component{
         })
     }
 
+    handleRemoveAllContact = () => {
+        this.setState((prevState) => {
+            return{
+                contactList: [],
+            }
+        })
+    }
 
     render(){
         return(
@@ -115,7 +121,7 @@ class ContactIndex extends React.Component{
                             <AddRandomContact handleAddRandomContact = {this.handleAddRandomContact}/>
                         </div>
                         <div className="col-4 row">
-                            <RemoveAllContact/>
+                            <RemoveAllContact removeAllContactClick = {this.handleRemoveAllContact}/>
                         </div>
                         <div className="row py-2">
                         <div className="col-8 offset-2 row">

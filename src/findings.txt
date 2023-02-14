@@ -120,3 +120,7 @@
     });
 
     End to end - Add Random contact - Working now
+
+80 and 81: Remove all Contact
+    Added a new handler in ContactIndex.jsx and emptied the contactList.
+    Passed that as prop to RemoveAllContact and then bound it with onClick event
