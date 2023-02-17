@@ -29,13 +29,13 @@ class AddContact extends React.Component {
         }
         else{
             response = this.props.handleAddContact({name: name, email:email, phone:phone});
-            if (response.status ==="success"){
-                this.setState({errorMessage: undefined, successMessage: response.msg});
-                document.querySelector(".contact-form").reset();
-            }
-            else{
-                this.setState({errorMessage: response.msg, successMessage: undefined});
-            }
+        }
+        if (response.status ==="success"){
+            this.setState({errorMessage: undefined, successMessage: response.msg});
+            document.querySelector(".contact-form").reset();
+        }
+        else{
+            this.setState({errorMessage: response.msg, successMessage: undefined});
         }
     }
 
