@@ -124,3 +124,6 @@
 80 and 81: Remove all Contact
     Added a new handler in ContactIndex.jsx and emptied the contactList.
     Passed that as prop to RemoveAllContact and then bound it with onClick event
+
+82. Edit implementation
+    Upon clicking on edit, the textboxes in form should be populated with existing data

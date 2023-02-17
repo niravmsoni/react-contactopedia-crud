@@ -33,7 +33,9 @@ class ContactIndex extends React.Component{
                     email: "saanvi@soni.com",
                     isFavorite: true,
                 },
-            ]
+            ],
+            selectedContact: undefined,
+            isUpdating: false,
         }
     }
 
@@ -109,6 +111,10 @@ class ContactIndex extends React.Component{
                 contactList: [],
             }
         })
+    }
+
+    handleUpdateClick = (contact) => {
+        
     }
 
     render(){
