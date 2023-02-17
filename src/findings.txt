@@ -129,4 +129,5 @@
     Upon clicking on edit, the textboxes in form should be populated with existing data.
     Created 2 new properties in state(ContactIndex.jsx)
     Created a handler in ContactIndex.jsx namely handleUpdateClick and passed it along to FavoriteContact, GeneralContact and then to Contact.jsx.
-    Bound it in Contact.jsx with onClick method.
+    Bound it in Contact.jsx with onClick method and passed contact as parameter.
+    Tested it with logging contact in handleUpdateClick and works fine
