@@ -131,3 +131,14 @@
     Created a handler in ContactIndex.jsx namely handleUpdateClick and passed it along to FavoriteContact, GeneralContact and then to Contact.jsx.
     Bound it in Contact.jsx with onClick method and passed contact as parameter.
     Tested it with logging contact in handleUpdateClick and works fine
+
+83. UI updates
+    When use clicks on edit, need to change title in AddContact.
+    So, passing selectedContact and isUpdating in props to AddContact.
+
+    Add check in AddContact to update the title. {this.props.isUpdating} ? "Update contact": "Add a new Contact"
+    In the textbox, set defaultValue with same condition as mentioned above in name property
+    defaultValue={this.props.isUpdating ? this.props.selectedContact.name : ""}
+
+    Similarly, added logi to display either "Create" or "Update" and "Cancel" based on this.props.isUpdating.
+    Also, added a few css classes to facilitate this behavior

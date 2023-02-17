@@ -137,7 +137,11 @@ class ContactIndex extends React.Component{
                         </div>
                         <div className="row py-2">
                         <div className="col-8 offset-2 row">
-                            <AddContact handleAddContact = {this.handleAddContact}/>
+                            <AddContact 
+                            handleAddContact = {this.handleAddContact}
+                            selectedContact = {this.state.selectedContact}
+                            isUpdating = {this.state.isUpdating}
+                            />
                             </div>
                         </div>
                         <div className="row py-2">
