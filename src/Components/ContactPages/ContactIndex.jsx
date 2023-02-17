@@ -114,7 +114,13 @@ class ContactIndex extends React.Component{
     }
 
     handleUpdateClick = (contact) => {
-        
+        console.log(contact);
+        this.setState((prevState) => {
+            return {
+                selectedContact: contact,
+                isUpdating: true
+            }
+        })
     }
 
     render(){
@@ -142,6 +148,7 @@ class ContactIndex extends React.Component{
                                 ((u) => u.isFavorite == true)}
                                 favoriteClick = {this.handleToggleFavorite}
                                 deleteClick = {this.handleDeleteContact}
+                                updateClick = {this.handleUpdateClick}
                             />
                         </div>
                         </div>
@@ -153,6 +160,7 @@ class ContactIndex extends React.Component{
                                 ((u) => u.isFavorite == false)}
                                 favoriteClick = {this.handleToggleFavorite}
                                 deleteClick = {this.handleDeleteContact}
+                                updateClick = {this.handleUpdateClick}
                                 />
                         </div>
                         </div>
