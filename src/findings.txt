@@ -150,3 +150,18 @@
     selectedContact to undefined.
     Implement this logic in contactIndex.jsx and then pass it as prop to Contact.jsx.
     From AddContact.jsx, bound onClick event to call the same prop cancelUpdateContact()
+
+85 and 86. Actual update
+    Copied handleAddContactHandler method and created new handleUpdateContactHandler and removed duplication check logic.
+    Then used map method to find the contact that is updated & update the state.
+    Then, passed method as prop to AddContact.jsx.
+
+    Then in addContact.jsx's handleAddContactFormSubmit() method, added a check as to whether isUpdating is true or false.
+    if (isUpdating)
+        Called handleAddContactHandler
+    else
+        Called handleUpdateContactHandler.
+
+    Apart from this, for updating record, we need ID to be bound to hidden field.
+    So, added a new hidden field and added name as contactId. Passed that along in the update call.
+    Then it works
