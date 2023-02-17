@@ -72,7 +72,7 @@ class AddContact extends React.Component {
         </div>
         <div className="col-12 col-md-4 p-1">
         {this.props.isUpdating && (
-            <button className="btn btn-secondary form-control btn-sm">Cancel</button>
+            <button className="btn btn-secondary form-control btn-sm" onClick={() => this.props.cancelUpdateContact()}>Cancel</button>
         )}
         </div>
         </div>

@@ -142,3 +142,11 @@
 
     Similarly, added logi to display either "Create" or "Update" and "Cancel" based on this.props.isUpdating.
     Also, added a few css classes to facilitate this behavior
+
+84. Cancel button
+    ToDo: Remove update and bring back create screen.
+    Set state items:
+    isUpdating to false.
+    selectedContact to undefined.
+    Implement this logic in contactIndex.jsx and then pass it as prop to Contact.jsx.
+    From AddContact.jsx, bound onClick event to call the same prop cancelUpdateContact()
